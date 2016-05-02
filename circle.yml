@@ -3,7 +3,7 @@ machine:
     version: 2.3.0
 dependencies:
   override:
-    - sudo apt-get install bundle
+    - gem install bundler
 
 test:
   override:
