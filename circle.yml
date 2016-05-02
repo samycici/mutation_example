@@ -1,0 +1,11 @@
+machine:
+  ruby:
+    version: 2.3.0
+dependencies:
+  override:
+    - sudo apt-get install bundle
+
+test:
+  override:
+    - bundle install
+    - rake mutant
