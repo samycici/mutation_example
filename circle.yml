@@ -4,6 +4,7 @@ machine:
 dependencies:
   override:
     - gem install bundler
+    - gem install rake
 
 test:
   override:
