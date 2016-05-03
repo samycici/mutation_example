@@ -1,11 +1,17 @@
 class Discount
   def get_discount(price)
-    imposto = case price
-    when (0..99) then 0
-    when (100..199) then 10
-    when (200..299) then 20
-    when (300..399) then 25
-    else 30
+    if price < 0
+      return 'Value not allowed'
+    elsif price >=0 and price <100
+      discount = 0
+    elsif price >=100 and price <200
+      discount = 10
+    elsif price >=200 and price <300
+      discount = 20
+    elsif price >=300 and price <400
+      discount = 25
+    else
+      discount = 30
     end
   end
 end

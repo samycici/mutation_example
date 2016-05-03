@@ -1,9 +1,17 @@
 require "minitest/autorun"
 require File.dirname(__FILE__) + '/discount.rb'
+require 'simplecov'
+SimpleCov.start
 
 class TestDiscount < Discount::Minitest::Test
   def setup
     @discount = Discount.new
+  end
+
+  def test_price_negative
+    actual = @discount.get_discount(-1)
+    expected_result = 'Value not allowed'
+    assert_equal expected_result, actual
   end
 
   def test_no_discount_with_10_price

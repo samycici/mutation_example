@@ -9,4 +9,9 @@ dependencies:
 test:
   override:
     - bundle install
+    - rake test
     - rake mutant
+
+general:
+  artifacts:
+    - "coverage/index.html"
