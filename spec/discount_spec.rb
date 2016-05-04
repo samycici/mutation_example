@@ -10,6 +10,11 @@ describe Discount do
       expected_result = 'Price can\'t be empty'
       expect(actual).to eq(expected_result)
       end
+    it "price is string" do
+      actual = discount.get_discount('string')
+      expected_result = 'Value not allowed'
+      expect(actual).to eq(expected_result)
+      end
     it "price is smaller than 0" do
       actual = discount.get_discount(-1)
       expected_result = 'Value not allowed'
