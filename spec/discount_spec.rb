@@ -5,6 +5,11 @@ SimpleCov.start
 describe Discount do
   subject(:discount) { Discount.new }
   context "with price I can calculate the discount" do
+    it "price is empty" do
+      actual = discount.get_discount('')
+      expected_result = 'Price can\'t be empty'
+      expect(actual).to eq(expected_result)
+      end
     it "price is smaller than 0" do
       actual = discount.get_discount(-1)
       expected_result = 'Value not allowed'
@@ -12,7 +17,7 @@ describe Discount do
       end
     it "price is 0" do
       actual = discount.get_discount(0)
-      expected_result = 'Value not allowed'
+      expected_result = 0
       expect(actual).to eq(expected_result)
       end
     it "price is 1" do
