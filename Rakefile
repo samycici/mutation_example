@@ -8,6 +8,5 @@ task :test_rspec do
   sh "rspec spec/"
 end
 task :mutant_rspec do
-  sh "mutant --include lib --require ./discount.rb --use rspec Discount*"
-  sh "exit 0"
+  sh "mutant --include lib --require ./discount.rb --use rspec Discount* && false"
 end
