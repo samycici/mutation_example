@@ -9,7 +9,7 @@ dependencies:
 test:
   override:
     - bundle install
-    - rake test_rspec
+    - CODECLIMATE_REPO_TOKEN=259ac9e57ad4aed8a8f92fd36664cf3aef2a9662402a2038b406caa918e2254f  rake test_rspec
     - rake mutant_rspec
 
 general:
