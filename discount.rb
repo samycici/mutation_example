@@ -5,14 +5,14 @@ class Discount
     elsif (price.is_a? Integer) == false or price <0
       'Value not allowed'
     else
-      discount = case price
+      case price
       when 0 .. 99
         0
       when 100 .. 199
         10
       when 200 .. 299
         20
-      when 300 .. 399
+      when 299 .. 399
         25
       else
         30

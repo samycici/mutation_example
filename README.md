@@ -1,4 +1,4 @@
-# mutation_example[![Circle CI](https://circleci.com/gh/samycici/mutation_example.svg?style=shield)](https://circleci.com/gh/samycici/mutation_example)
+# mutation_example[![Circle CI](https://circleci.com/gh/samycici/mutation_example.svg?style=shield)](https://circleci.com/gh/samycici/mutation_example) [![Code Climate](https://codeclimate.com/github/samycici/mutation_example.png)](https://codeclimate.com/github/samycici/mutation_example)
 Mutation Testing in Ruby
 
 Require Ruby >= 2.3
