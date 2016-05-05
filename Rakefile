@@ -9,7 +9,7 @@ task :mutant_minitest do
   puts "Running mutation:test:minitest"
   begin
     sh "bundle exec mutant --include lib --require ./discount -I test --use minitest Discount"
-  rescue Exception => e
+  rescue StandardError => e
       "now will return with 0"
   end
 end
@@ -25,7 +25,7 @@ task :mutant_rspec do
   puts "Running mutation:test:rspec"
   begin
       sh "mutant --include lib --require ./discount.rb --use rspec Discount*"
-  rescue Exception => e
+  rescue StandardError => e
       "now will return with 0"
   end
 end
