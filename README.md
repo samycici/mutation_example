@@ -3,6 +3,21 @@ Mutation Testing in Ruby
 
 Require Ruby >= 2.3
 
+Rbenv
+------------
+
+Install version:
+
+```ruby
+rbenv install 2.3.1
+```
+
+Use version:
+
+```ruby
+rbenv local 2.3.1
+```
+
 Installation
 ------------
 
